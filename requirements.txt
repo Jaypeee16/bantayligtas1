@@ -2,7 +2,7 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Core app (English model)
-streamlit>=1.45,<2.0      # pills, segmented control, badges
+streamlit==1.65.0       # pinned: the version the app was built and tested with
 scikit-learn==1.6.1      # must match the version the saved .pkl models were made with
 numpy>=2.0,<2.3          # models were pickled with numpy 2.x
 pandas>=2.2,<3.0

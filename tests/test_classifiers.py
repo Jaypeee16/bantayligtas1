@@ -39,7 +39,7 @@ def test_confidence_and_top3(service):
 def test_training_examples_mostly_recovered(service, training_data):
     sample = training_data.sample(40, random_state=0)
     hits = sum(service.classify(t, mode="english").prediction.category == y
-               for t, y in zip(sample["tweet_text"], sample["class_label"]))
+               for t, y in zip(sample["tweet_text"], sample["class_label"], strict=True))
     assert hits >= 30
 
 

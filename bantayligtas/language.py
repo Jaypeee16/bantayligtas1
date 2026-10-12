@@ -48,7 +48,6 @@ _TOKEN = re.compile(r"[a-zñ]+")
 class LanguageResult:
     language: str               # "english" or "taglish"
     filipino_ratio: float       # share of tokens that are Tagalog markers
-    marker_count: int
     markers: list[str] = field(default_factory=list)
 
     @property
@@ -59,7 +58,7 @@ class LanguageResult:
 def detect_language(text: str) -> LanguageResult:
     tokens = _TOKEN.findall(str(text).lower())
     if not tokens:
-        return LanguageResult("english", 0.0, 0, [])
+        return LanguageResult("english", 0.0, [])
 
     hits = [t for t in tokens if t in TAGALOG_MARKERS]
     ratio = len(hits) / len(tokens)
@@ -70,6 +69,5 @@ def detect_language(text: str) -> LanguageResult:
     return LanguageResult(
         language="taglish" if is_taglish else "english",
         filipino_ratio=round(ratio, 3),
-        marker_count=len(hits),
         markers=unique_hits,
     )

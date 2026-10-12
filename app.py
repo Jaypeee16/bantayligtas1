@@ -186,10 +186,6 @@ with st.sidebar:
     with st.expander("Model files"):
         st.caption(f"Models folder:\n\n`{status['model_dir']}`")
 
-    st.divider()
-    st.caption("Research prototype. It does not contact or dispatch emergency services.")
-    st.markdown("**In an emergency call 911.**")
-
 # ---------------------------------------------------------------- header
 st.markdown("""
 <div class="bl-hero">
@@ -235,8 +231,8 @@ with submit_tab:
             save = st.checkbox("Save to the dashboard", value=True)
             b1, b2, _ = st.columns([2, 1, 2])
             submitted = b1.form_submit_button("Classify report", type="primary", icon="🔍",
-                                              use_container_width=True)
-            b2.form_submit_button("Clear", on_click=clear_form, use_container_width=True)
+                                              width="stretch")
+            b2.form_submit_button("Clear", on_click=clear_form, width="stretch")
 
     result_col = st.container()   # the result shows right under the form, above the examples
 
@@ -370,11 +366,11 @@ with dashboard_tab:
                 counts = view["category_name"].value_counts()
                 colours = {config.readable_label(k): v for k, v in CATEGORY_COLOURS.items()}
                 st.altair_chart(bar_chart(counts, colours={k: colours.get(k, PRIMARY) for k in counts.index}),
-                                use_container_width=True)
+                                width="stretch")
                 st.caption(f"Most common: **{counts.index[0]}**")
             with ch2, st.container(border=True):
                 section("By model")
-                st.altair_chart(bar_chart(view["model_name"].value_counts(), 120), use_container_width=True)
+                st.altair_chart(bar_chart(view["model_name"].value_counts(), 120), width="stretch")
                 low = int(view["needs_review"].sum())
                 st.caption(f"**{low}** report(s) below {config.LOW_CONFIDENCE_THRESHOLD:.0%} confidence "
                            "need a person to check them." if low else "All reports are above the review threshold.")
@@ -387,7 +383,7 @@ with dashboard_tab:
                     category=view["predicted_category"].map(CATEGORY_ICONS).fillna("📌") + " " + view["category_name"],
                 )[["id", "submitted", "category", "confidence", "review", "report_text", "model_name"]]
                 st.dataframe(
-                    table, hide_index=True, use_container_width=True,
+                    table, hide_index=True, width="stretch",
                     column_config={
                         "id": st.column_config.NumberColumn("ID", width="small"),
                         "submitted": st.column_config.DatetimeColumn("Submitted", format="MMM D, h:mm a"),
@@ -405,7 +401,7 @@ with dashboard_tab:
                     lambda v: "; ".join(f"{config.readable_label(l)} {p:.2f}" for l, p in json.loads(v)) if v else "")
                 a1.download_button("Download CSV", export.to_csv(index=False).encode("utf-8-sig"),
                                    file_name="bantayligtas_reports.csv", mime="text/csv", icon="⬇️",
-                                   use_container_width=True)
+                                   width="stretch")
 
                 with a2.expander("🗑️ Delete a report"):
                     labels = {int(r.id): f"#{r.id} · {r.category_name} · {str(r.report_text)[:60]}"

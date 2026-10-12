@@ -12,7 +12,7 @@ This version combines the four project notebooks into one app that runs on your 
 | `04_BantayLigtas_Presentation_Launcher` | Launched the app in Colab | `run.bat` / `run.sh` |
 
 **New in this version**
-- **Automatic language detection.** The app looks for Filipino words and sends each report to the English or Taglish model. You can still choose the model yourself in the sidebar.
+- **Automatic language detection.** The app looks for Filipino words and sends each report to the English or Taglish model. You can still choose the model yourself with the *Language model* selector.
 - **Confidence scores.** Each result shows its confidence and the top 3 categories. Reports below 50% confidence are flagged for human review.
 - **Fixes from the notebooks.**
   - The app now uses the same preprocessing the English model was trained with.
@@ -28,17 +28,17 @@ This version combines the four project notebooks into one app that runs on your 
 - About 3 GB of free disk space for PyTorch and the Taglish encoder.
 - Internet access the first time you run it, to download packages and the 440 MB DOST-ASTI encoder from Hugging Face.
 
-## 2. Get the model files
+## 2. Model files
 
-Copy these files from Google Drive **`MyDrive/BantayLigtas/presentation_app/models/`** into this project's **`models/`** folder:
+The trained models are already included in **`models/`**:
 
 ```
-models/bantayligtas_tfidf.pkl              (required, English)
-models/bantayligtas_classifier.pkl         (required, English)
-models/dost_asti_taglish_adapted_v1.pkl    (optional, Taglish)
+models/bantayligtas_tfidf.pkl              English TF-IDF vectorizer
+models/bantayligtas_classifier.pkl         English Logistic Regression
+models/dost_asti_taglish_adapted_v1.pkl    Taglish classifier (on DOST-ASTI RoBERTa embeddings)
 ```
 
-If you can't get them, you can retrain them (see section 6).
+To rebuild them from the HumAID data, see section 6.
 
 ## 3. Run it
 
@@ -61,7 +61,7 @@ streamlit run app.py
 
 ### Put it online (Streamlit Community Cloud)
 
-1. Push this folder to a GitHub repository. The three `.pkl` model files are included (about 7 MB).
+1. Push this folder to a GitHub repository (this project lives at github.com/Jaypeee16/bantayligtas).
 2. Go to **share.streamlit.io**, sign in with GitHub and click **Create app → Deploy a public app from GitHub**.
 3. Pick the repository, branch `main` and main file `app.py`. Under **Advanced settings** choose **Python 3.12**.
 4. Click **Deploy**. The first build takes about 5–10 minutes (it installs PyTorch). The first Taglish
@@ -80,7 +80,7 @@ about 1–1.5 GB of memory; if the app runs out of memory, use the English-only 
   - which Filipino words triggered the language detection
   - the top 3 categories
 - **Dashboard.** Shows totals, average confidence, the share of Taglish reports and charts. You can:
-  - filter by language, category or minimum confidence
+  - filter by model, category, minimum confidence or reports needing review
   - download the reports as CSV
   - delete reports
 - **About.** Explains how it works, gives the evaluation results and lists limitations.
@@ -107,8 +107,8 @@ data/
   taglish_adaptation_v1.csv   100 Taglish training examples (notebook 02)
   taglish_heldout_v1.csv      50 held-out Taglish test reports
   taglish_diagnostic_v1.csv   20 diagnostic examples
-models/                    put the .pkl files here
-tests/                     pytest suite (26 tests)
+models/                    trained model files (.pkl)
+tests/                     pytest suite (27 tests)
 ```
 
 Environment variables (optional): `BANTAYLIGTAS_MODEL_DIR`, `BANTAYLIGTAS_DB`, `BANTAYLIGTAS_ENCODER`.
@@ -134,7 +134,7 @@ Both scripts print accuracy and macro-F1 and save the models into `models/`. The
 | Taglish model fails on first use | It downloads the encoder from Hugging Face, so check your internet connection. |
 | Port 8501 already in use | `streamlit run app.py --server.port 8502` |
 
-Run the tests with `pip install pytest` and then `pytest`. The tests use small stand-in models, so they don't need the real `.pkl` files or torch.
+Run the tests with `pip install -r requirements-dev.txt` and then `pytest`. The tests use small stand-in models, so they don't need the real `.pkl` files or torch.
 
 ## Limitations
 

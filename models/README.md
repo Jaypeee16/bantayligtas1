@@ -1,6 +1,4 @@
-# Put the trained model files here
-
-Copy these 3 files from Google Drive `MyDrive/BantayLigtas/presentation_app/models/`:
+# Trained models
 
 | File | Model | Required? |
 |---|---|---|
@@ -8,4 +6,5 @@ Copy these 3 files from Google Drive `MyDrive/BantayLigtas/presentation_app/mode
 | `bantayligtas_classifier.pkl` | English Logistic Regression | Yes |
 | `dost_asti_taglish_adapted_v1.pkl` | Taglish classifier (on DOST-ASTI RoBERTa embeddings) | Optional, falls back to English |
 
-No Drive access? Rebuild them with `scripts/train_english.py` and `scripts/train_taglish.py`.
+Saved with scikit-learn 1.6.1 and numpy 2.x. Rebuild them with `scripts/train_english.py` and
+`scripts/train_taglish.py`.
