@@ -1,0 +1,21 @@
+tweet_text,class_label
+Wala na kaming malinis na tubig dito.,requests_or_urgent_needs
+Need namin ng pagkain at drinking water sa evacuation center.,requests_or_urgent_needs
+May pamilya na na-trap sa second floor. Need rescue po.,requests_or_urgent_needs
+"Please send medical help, hirap nang huminga ang lolo ko.",requests_or_urgent_needs
+Bumagsak ang poste ng kuryente sa kalsada.,infrastructure_and_utility_damage
+Wala nang electricity sa buong barangay after ng bagyo.,infrastructure_and_utility_damage
+Nasira ang tulay at hindi madaanan ng mga sasakyan.,infrastructure_and_utility_damage
+May tatlong sugatan matapos gumuho ang bahay.,injured_or_dead_people
+Dalawang tao ang namatay dahil sa landslide.,injured_or_dead_people
+Inilikas na ang mga residente papunta sa covered court.,displaced_people_and_evacuations
+Nasa evacuation center na kami since yesterday.,displaced_people_and_evacuations
+Hindi pa rin mahanap ang kapatid ko after ng baha.,missing_or_found_people
+Nahanap na ang batang nawawala simula kahapon.,missing_or_found_people
+Nagpadala ang volunteers ng relief goods sa barangay.,rescue_volunteering_or_donation_effort
+Our team is offering free rescue transport sa flooded areas.,rescue_volunteering_or_donation_effort
+Iwasan ang pagdaan sa kalsadang binaha.,caution_and_advice
+Please charge your phones before the storm arrives.,caution_and_advice
+Praying for everyone affected by the typhoon.,sympathy_and_support
+Patuloy ang malakas na ulan sa aming lugar.,other_relevant_information
+Ang ganda ng bagong cellphone ko!,not_humanitarian

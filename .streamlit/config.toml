@@ -1,0 +1,13 @@
+[server]
+headless = false
+port = 8501
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Hide the developer toolbar (Deploy button, rerun menu) for presentations and users
+toolbarMode = "viewer"
+
+[theme]
+primaryColor = "#d9480f"

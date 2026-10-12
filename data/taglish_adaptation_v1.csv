@@ -1,0 +1,101 @@
+tweet_text,class_label
+"Kailangan po namin ng rescue boat, tumataas na ang tubig sa bahay.",requests_or_urgent_needs
+Please send drinking water sa mga stranded families dito.,requests_or_urgent_needs
+"Wala na kaming pagkain since yesterday, kailangan namin ng supplies.",requests_or_urgent_needs
+"Help po, may senior citizen na kailangang ilikas agad.",requests_or_urgent_needs
+Need urgent assistance sa mga batang walang makain.,requests_or_urgent_needs
+Sana may magdala ng gamot sa evacuation site namin.,requests_or_urgent_needs
+Can someone send blankets? Nilalamig ang mga bata dito.,requests_or_urgent_needs
+"SOS po, stranded kami sa rooftop at kailangan ng tulong.",requests_or_urgent_needs
+Humihingi ng tulong ang mga residente para sa potable water.,requests_or_urgent_needs
+"Please help evacuate our neighbors, hindi na sila makalabas.",requests_or_urgent_needs
+Nasira ang main road dahil sa malakas na landslide.,infrastructure_and_utility_damage
+The bridge collapsed sa kabilang barangay after the flood.,infrastructure_and_utility_damage
+Naputol ang mga linya ng kuryente matapos ang bagyo.,infrastructure_and_utility_damage
+Maraming bahay ang gumuho dahil sa lindol.,infrastructure_and_utility_damage
+Damaged ang water pipes kaya walang supply sa lugar.,infrastructure_and_utility_damage
+Bumagsak ang malaking puno sa electrical wires.,infrastructure_and_utility_damage
+Hindi na madaanan ang highway dahil nasira ang pavement.,infrastructure_and_utility_damage
+The hospital building sustained severe structural damage.,infrastructure_and_utility_damage
+Wasak ang bubong ng paaralan after ng typhoon.,infrastructure_and_utility_damage
+Nagkaroon ng malaking bitak sa evacuation center building.,infrastructure_and_utility_damage
+Missing pa rin ang tatay ko mula noong baha.,missing_or_found_people
+Hinahanap namin ang dalawang batang nawala during evacuation.,missing_or_found_people
+May nakita kaming nawawalang matanda malapit sa covered court.,missing_or_found_people
+"Please help us locate my sister, last seen sa evacuation area.",missing_or_found_people
+Nahanap na ang mga residenteng nawawala matapos ang landslide.,missing_or_found_people
+Wala pa ring balita sa nawawalang rescue volunteer.,missing_or_found_people
+Found a lost child sa relief distribution area.,missing_or_found_people
+Sino po ang nakakita sa lalaking nawawala since last night?,missing_or_found_people
+Our missing relatives were found safe sa kabilang bayan.,missing_or_found_people
+Hindi ma-contact at hindi mahanap ang pamilya namin after the storm.,missing_or_found_people
+Lumipat na ang mga pamilya sa temporary shelter.,displaced_people_and_evacuations
+Hundreds of residents evacuated dahil sa rising floodwater.,displaced_people_and_evacuations
+Nasa gymnasium na ang mga pamilyang lumikas.,displaced_people_and_evacuations
+Pinapaalis na ang mga nakatira malapit sa ilog.,displaced_people_and_evacuations
+Evacuation is ongoing sa coastal communities.,displaced_people_and_evacuations
+Maraming residente ang pansamantalang nanunuluyan sa paaralan.,displaced_people_and_evacuations
+The families were transferred to a safer evacuation facility.,displaced_people_and_evacuations
+Lumikas ang buong sitio bago dumating ang bagyo.,displaced_people_and_evacuations
+Temporary housing ang kailangan ng mga nawalan ng tirahan.,requests_or_urgent_needs
+Nagsimula nang ilikas ang mga tao mula sa danger zone.,displaced_people_and_evacuations
+May limang nasugatan sa pagbagsak ng pader.,injured_or_dead_people
+Two people died matapos ang malakas na lindol.,injured_or_dead_people
+Maraming injured residents matapos gumuho ang gusali.,injured_or_dead_people
+Isang bata ang nasaktan dahil sa falling debris.,injured_or_dead_people
+Tatlong katao ang nasawi sa flash flood.,injured_or_dead_people
+May mga sugatang evacuees sa temporary shelter.,injured_or_dead_people
+Several casualties were reported sa landslide area.,injured_or_dead_people
+Nasugatan ang mga pasahero nang bumagsak ang tulay.,injured_or_dead_people
+The typhoon left several residents seriously injured.,injured_or_dead_people
+Dalawang residente ang namatay sa pagguho ng lupa.,injured_or_dead_people
+Huwag munang tumawid sa ilog dahil malakas ang agos.,caution_and_advice
+Stay indoors po habang may malakas na hangin.,caution_and_advice
+Maghanda ng emergency bag bago dumating ang bagyo.,caution_and_advice
+Avoid the mountain road dahil may risk ng landslide.,caution_and_advice
+Pakuluan muna ang tubig bago inumin pagkatapos ng baha.,caution_and_advice
+Please follow official evacuation instructions.,caution_and_advice
+Iwasang lumapit sa mga naputol na electrical wires.,caution_and_advice
+Magdala ng flashlight at extra batteries sa evacuation.,caution_and_advice
+Don't enter damaged buildings hangga't hindi inspected.,caution_and_advice
+Makinig sa weather updates bago bumiyahe.,caution_and_advice
+Nag-organize kami ng relief distribution para sa flood victims.,rescue_volunteering_or_donation_effort
+Our volunteers delivered food packs sa affected communities.,rescue_volunteering_or_donation_effort
+May rescue team na tumutulong sa mga stranded residents.,rescue_volunteering_or_donation_effort
+Nag-donate ang local businesses ng bottled water.,rescue_volunteering_or_donation_effort
+We are collecting clothes and blankets para sa evacuees.,rescue_volunteering_or_donation_effort
+Nagpadala ng medical volunteers sa disaster area.,rescue_volunteering_or_donation_effort
+Free meals ang inihahanda ng community volunteers.,rescue_volunteering_or_donation_effort
+The rescue operation successfully assisted several families.,rescue_volunteering_or_donation_effort
+May donation drive para sa mga naapektuhan ng lindol.,rescue_volunteering_or_donation_effort
+Our group distributed hygiene kits sa evacuation shelters.,rescue_volunteering_or_donation_effort
+Nakikiramay kami sa mga pamilyang nawalan ng mahal sa buhay.,sympathy_and_support
+Sending prayers sa lahat ng naapektuhan ng bagyo.,sympathy_and_support
+Stay strong po sa mga residenteng nasalanta.,sympathy_and_support
+Our hearts are with the families affected by the earthquake.,sympathy_and_support
+Sana maging ligtas ang lahat ngayong may malakas na ulan.,sympathy_and_support
+We stand with the communities recovering from the flood.,sympathy_and_support
+Dasal namin ang mabilis na pagbangon ng mga nasalanta.,sympathy_and_support
+Condolences sa lahat ng nawalan ng pamilya sa sakuna.,sympathy_and_support
+Hoping for everyone's safety during this difficult time.,sympathy_and_support
+"Hindi kayo nag-iisa, kapit lang po sa mga naapektuhan.",sympathy_and_support
+Patuloy ang pagtaas ng tubig sa ilog ngayong hapon.,other_relevant_information
+Malakas pa rin ang hangin sa coastal barangays.,other_relevant_information
+The earthquake was felt sa maraming bahagi ng probinsya.,other_relevant_information
+May malawakang pagbaha sa low-lying areas.,other_relevant_information
+Heavy rainfall continues sa northern municipalities.,other_relevant_information
+Nagsimula ang pag-ulan bandang alas tres ng hapon.,other_relevant_information
+The storm has moved closer sa eastern coastline.,other_relevant_information
+Tumaas ang water level sa dam matapos ang ulan.,other_relevant_information
+Maraming lugar ang naapektuhan ng malakas na bagyo.,other_relevant_information
+Floodwater remains high sa ilang residential areas.,other_relevant_information
+Masarap ang lunch namin kanina.,not_humanitarian
+Watching my favorite series ngayong gabi.,not_humanitarian
+Bumili ako ng bagong sapatos online.,not_humanitarian
+Excited na ako sa birthday celebration bukas.,not_humanitarian
+Nag-aaral ako ng Python programming today.,not_humanitarian
+Ang cute ng pusa namin habang natutulog.,not_humanitarian
+My favorite basketball team won last night.,not_humanitarian
+Nagpunta kami sa mall para mag-shopping.,not_humanitarian
+Listening to music habang naglilinis ng kwarto.,not_humanitarian
+I finished my school assignment nang maaga.,not_humanitarian

@@ -1,0 +1,13 @@
+# CPU-only PyTorch: much smaller than the default GPU build (needed for Streamlit Cloud)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Core app (English model)
+streamlit>=1.45,<2.0      # pills, segmented control, badges
+scikit-learn==1.6.1      # must match the version the saved .pkl models were made with
+numpy>=2.0,<2.3          # models were pickled with numpy 2.x
+pandas>=2.2,<3.0
+joblib>=1.4
+
+# Taglish model (optional - the app falls back to English without these)
+torch>=2.3
+transformers>=4.44,<5.0

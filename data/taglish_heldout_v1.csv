@@ -1,0 +1,51 @@
+tweet_text,class_label
+"Pa-rescue po kami sa may palengke, hanggang dibdib na ang baha.",requests_or_urgent_needs
+"May baby dito na walang formula milk, baka puwedeng magpadala.",requests_or_urgent_needs
+Kailangan ng dialysis patient namin ng transport papuntang ospital.,requests_or_urgent_needs
+Can anyone bring insulin sa shelter? Ubos na ang gamot ng nanay ko.,requests_or_urgent_needs
+Humihingi kami ng bangka para mailabas ang mga tao sa purok namin.,requests_or_urgent_needs
+Natanggal ang bubong ng health center sa lakas ng hangin.,infrastructure_and_utility_damage
+The flood destroyed several drainage canals sa bayan.,infrastructure_and_utility_damage
+Nabiyak ang kalsada malapit sa munisipyo pagkatapos ng lindol.,infrastructure_and_utility_damage
+Hindi gumagana ang communication towers matapos ang bagyo.,infrastructure_and_utility_damage
+The water pumping station was damaged sa flash flood.,infrastructure_and_utility_damage
+Last seen sa pier ang nawawala naming pinsan bago ang bagyo.,missing_or_found_people
+May batang naghahanap ng magulang sa relief center.,missing_or_found_people
+Nakita na ang mangingisdang ilang araw na hindi umuuwi.,missing_or_found_people
+Still searching for our neighbor na hindi nakabalik mula sa evacuation.,missing_or_found_people
+Nahanap ng rescuers ang dalawang taong matagal nang missing.,missing_or_found_people
+Umalis na ang mga nakatira sa tabing-dagat bago ang storm surge.,displaced_people_and_evacuations
+Sa basketball court pansamantalang nakatira ang mga pamilyang lumikas.,displaced_people_and_evacuations
+The entire neighborhood relocated sa temporary camp.,displaced_people_and_evacuations
+Naglipatan ang mga tao sa mas mataas na lugar dahil sa baha.,displaced_people_and_evacuations
+More families arrived sa evacuation shelter ngayong umaga.,displaced_people_and_evacuations
+May isang nasawi nang tangayin ng rumaragasang tubig.,injured_or_dead_people
+A falling tree injured three residents sa gitna ng bagyo.,injured_or_dead_people
+Nagtamo ng matinding sugat ang isang construction worker sa pagguho.,injured_or_dead_people
+Two fatalities were confirmed matapos ang mudslide.,injured_or_dead_people
+May mga taong napilayan sa stampede habang lumilikas.,injured_or_dead_people
+Huwag gamitin ang appliances na nabasa sa baha.,caution_and_advice
+Secure your windows po bago lumakas ang hangin.,caution_and_advice
+Iwasan muna ang paglangoy sa dagat dahil may storm warning.,caution_and_advice
+Please keep emergency contacts ready habang may bagyo.,caution_and_advice
+Magsuot ng protective footwear kapag naglilinis pagkatapos ng baha.,caution_and_advice
+Naghatid ang coast guard ng mga stranded na pasahero sa ligtas na lugar.,rescue_volunteering_or_donation_effort
+Our organization donated solar lamps sa mga evacuation sites.,rescue_volunteering_or_donation_effort
+Nagsagawa ng search-and-rescue operation ang local responders.,rescue_volunteering_or_donation_effort
+Community members are packing relief kits para sa mga nasalanta.,rescue_volunteering_or_donation_effort
+May libreng checkup ang volunteer doctors para sa flood survivors.,rescue_volunteering_or_donation_effort
+Taos-pusong pakikiramay sa mga nawalan ng tahanan at pamilya.,sympathy_and_support
+We are thinking of everyone affected sa Visayas.,sympathy_and_support
+Sana makabangon agad ang mga komunidad na nasalanta.,sympathy_and_support
+Sending strength and hope sa lahat ng evacuees.,sympathy_and_support
+Our deepest condolences sa mga pamilya ng biktima.,sympathy_and_support
+Naramdaman ang malakas na aftershock bandang madaling-araw.,other_relevant_information
+The storm is approaching the western coastline ngayong gabi.,other_relevant_information
+Umabot sa mahigit isang metro ang baha sa ilang lugar.,other_relevant_information
+Continuous rainfall was observed sa upland communities.,other_relevant_information
+Lumakas ang agos ng ilog matapos ang magdamag na ulan.,other_relevant_information
+Nag-order ako ng iced coffee bago pumasok.,not_humanitarian
+"I love this new song, ang ganda ng melody.",not_humanitarian
+Naglaro kami ng badminton sa weekend.,not_humanitarian
+"My laptop finally arrived, sobrang excited ako.",not_humanitarian
+Masaya ang family reunion namin kahapon.,not_humanitarian
